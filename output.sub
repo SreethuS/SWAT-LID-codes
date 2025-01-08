@@ -1,0 +1,11 @@
+1
+    SWAT Sep 7    VER 2018/Rev 670                                                                       0/ 0/   0      0: 0: 0
+
+    General Input/Output section (file.cio):                                        
+    02/05/2024 12:00:00 AM ARCGIS-SWAT interface AV                                 
+                                                                                    
+
+
+       SUB      GIS  MON   AREAkm2  PRECIPmm SNOMELTmm     PETmm      ETmm      SWmm    PERCmm    SURQmm    GW_Qmm    WYLDmm  SYLDt/ha ORGNkg/ha ORGPkg/haNSURQkg/ha SOLPkg/ha SEDPkg/ha LAT Q(mm)LATNO3kg/hGWNO3kg/haCHOLAmic/LCBODU mg/L DOXQ mg/L TNO3kg/ha   QTILEmm TVAPkg/ha
+BIGSUB    1        0 2001.83023E+03  1429.700     0.000  1935.016   281.763   192.647   169.316   854.397    53.793   910.766     0.771    91.596    11.315     0.011     0.124    18.112     0.606     0.000     0.000 .00000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+BIGSUB    1        0  1.0.83023E+03  1429.700     0.000  1935.016   281.763   192.647   169.316   854.397    53.793   910.766     0.771    91.596    11.315     0.011     0.124    18.112     0.606     0.000     0.000 .00000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00

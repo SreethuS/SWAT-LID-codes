@@ -1,0 +1,63 @@
+1
+    SWAT Sep 7    VER 2018/Rev 670                                                                       0/ 0/   0      0: 0: 0
+
+    General Input/Output section (file.cio):                                        
+    02/05/2024 12:00:00 AM ARCGIS-SWAT interface AV                                 
+                                                                                    
+         Number of years in run:    1
+         Area of watershed:      830.234 km2
+         Random number generator cycles: 0, use default numbers
+
+         Initial random number seed: wet/dry day prob        748932582
+         Initial random number seed: radiation              1948832765
+         Initial random number seed: precipitation           857034417
+         Initial random number seed: 0.5 hr rainfall          67377721
+         Initial random number seed: wind speed              366304404
+         Initial random number seed: irrigation             1094585182
+         Initial random number seed: relative humidity      1767585417
+         Initial random number seed: max temperature         608439319
+         Initial random number seed: min temperature         592757081
+
+         Precipitation data used in run:
+          Multiple gages read for watershed
+             Subdaily rainfall data used, summarized every  30min
+
+         Temperature data used in run:
+          Multiple gages simulated for watershed
+
+         PET method used: Penman-Monteith
+
+         Rainfall/Runoff/Routing Option:
+           Muskingum routing method
+           Channel dimensions remain constant
+           Subbasin algae/CBOD loadings not modeled
+           In-stream nutrient transformations modeled using QUAL2E equations
+
+         Subbasin Input Summary:
+          Sub Latitude  Elev(m) #HRUs Ponds Elevbnds Wetlnd
+            1    12.96    36.32     1                   
+
+         HRU Input Summary Table 1:
+          Sub   HRU   Area(ha) Slope SlpLgth(m) Ovrlnd_N CondII_CN TimeConc(hr) ESCO EPCO
+            1      1   83023.36 0.035      91.46    0.100     86.22        5.159 0.95 1.00
+
+         HRU CN Input Summary Table:
+          Sub   HRU   Area(ha)  LULC      Soil    CN1    CN2    CN3  Wilting Point (mm H2O)  Field Capacity (mm H2O)  Saturation (mm H2O)
+            1      1   83023.36  BERM  Habitati   71.7   86.2   94.6                   166.3                    195.0                462.0
+
+         HRU Input Summary Table 2:
+          Sub   HRU   Area(ha)         SoilName Hydgrp MaxRtDpth(mm) Albedo USLE_K USLE_P USLE_LS ProfileAWC(mm) IniSoilH2O(mm)
+            1      1   83023.36 Habitation         D          1500.00   0.30   0.16   1.00    0.56    195.000        131.142
+
+         HRU Input Summary Table 3:
+          Sub   HRU   Area(ha) Urban Irrig DrainTiles Pothole Pstcide Biomix Septic
+            1      1   83023.36   x                                      0.20 x
+
+         HRU Input Summary Table 4 (Groundwater):
+          Sub   HRU   Area(ha) GWdelay(days), GWalpha(days) GWQmin(mm) GWrevap Revapmin(mm) Deepfr NO3(ppm) SolP(ppm)
+            1      1   83023.36        31.000         0.048   1000.000   0.020      750.000  0.050    0.000     0.000
+
+         Tributary/Main Channel Characteristics
+              |--------------Tributary--------------------|---------------------Main-------------------------------------|
+          Sub  Length(km) Slope Width(m) Cond(mm/hr)     N Length(km) Slope Width(m) Depth(m) Cond(mm/hr)     N      MSK_K
+              1       40.95 0.002    72.80      0.0000 0.014     172.16 0.000    72.80     1.91      0.0000 0.014    35.07
