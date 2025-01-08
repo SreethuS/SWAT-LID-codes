@@ -1,0 +1,931 @@
+OBJ = main.o\
+      addh.o\
+      albedo.o\
+      allocate_parms.o\
+      alph.o\
+      anfert.o\
+      apex_day.o\
+      apply.o\
+      ascrv.o\
+      atri.o\
+      aunif.o\
+      autoirr.o\
+      aveval.o\
+      bacteria.o\
+      biofilm.o\
+      biozone.o\
+      bmpfixed.o\
+      bmpinit.o\
+      bmp_det_pond.o\
+      bmp_ri_pond.o\
+      bmp_sand_filter.o\
+      bmp_sed_pond.o\
+      bmp_wet_pond.o\
+      buffer.o\
+      burnop.o\
+      canopyint.o\
+      caps.o\
+      carbon_new.o\
+      carbon_zhang2.o\
+      cfactor.o\
+      chkcst.o\
+      clgen.o\
+      clicon.o\
+      command.o\
+      conapply.o\
+      confert.o\
+      crackflow.o\
+      crackvol.o\
+      curno.o\
+      dailycn.o\
+      decay.o\
+      depstor.o\
+      distrib_bmps.o\
+      dormant.o\
+      drains.o\
+      dstn1.o\
+      ee.o\
+      eiusle.o\
+      enrsb.o\
+      erfc.o\
+      estimate_ksat.o\
+      etact.o\
+      etpot.o\
+      expo.o\
+      fert.o\
+      filter.o\
+      filtw.o\
+      finalbal.o\
+      gcycl.o\
+      getallo.o\
+      grass_wway.o\
+      graze.o\
+      grow.o\
+      gwmod.o\
+      gwmod_deep.o\
+      gwnutr.o\
+      gw_no3.o\
+      h2omgt_init.o\
+      harvestop.o\
+      harvgrainop.o\
+      harvkillop.o\
+      header.o\
+      headout.o\
+      hhnoqual.o\
+      hhwatqual.o\
+      hmeas.o\
+      HQDAV.o\
+      hruaa.o\
+      hruallo.o\
+      hruday.o\
+      hrumon.o\
+      hrupond.o\
+      hrupondhr.o\
+      hruyr.o\
+      hydroinit.o\
+      icl.o\
+      impndaa.o\
+      impndday.o\
+      impndmon.o\
+      impndyr.o\
+      impnd_init.o\
+      irrigate.o\
+      irrsub.o\
+      irr_rch.o\
+      irr_res.o\
+      jdt.o\
+      killop.o\
+      lakeq.o\
+      latsed.o\
+      layersplit.o\
+      lidinit.o\
+      lids.o\
+      lid_cistern.o\
+      lid_greenroof.o\
+      lid_porpavement.o\
+      lid_raingarden.o\
+      log_normal.o\
+      lwqdef.o\
+      NCsed_leach.o\
+      ndenit.o\
+      newtillmix.o\
+      nfix.o\
+      nitvol.o\
+      nlch.o\
+      nminrl.o\
+      noqual.o\
+      npup.o\
+      nrain.o\
+      nup.o\
+      nuts.o\
+      openwth.o\
+      operatn.o\
+      orgn.o\
+      orgncswat.o\
+      origtile.o\
+      ovr_sed.o\
+      percmacro.o\
+      percmain.o\
+      percmicro.o\
+      pestlch.o\
+      pestw.o\
+      pesty.o\
+      pgen.o\
+      pgenhr.o\
+      pkq.o\
+      plantmod.o\
+      plantop.o\
+      pmeas.o\
+      pminrl.o\
+      pminrl2.o\
+      pond.o\
+      pondhr.o\
+      pothole.o\
+      potholehr.o\
+      print_hyd.o\
+      psed.o\
+      qman.o\
+      ran1.o\
+      rchaa.o\
+      rchday.o\
+      rchinit.o\
+      rchmon.o\
+      rchuse.o\
+      rchyr.o\
+      reachout.o\
+      readatmodep.o\
+      readbsn.o\
+      readchm.o\
+      readcnst.o\
+      readfcst.o\
+      readfert.o\
+      readfig.o\
+      readfile.o\
+      readgw.o\
+      readhru.o\
+      readinpt.o\
+      readlup.o\
+      readlwq.o\
+      readmgt.o\
+      readmon.o\
+      readops.o\
+      readpest.o\
+      readplant.o\
+      readpnd.o\
+      readres.o\
+      readrte.o\
+      readru.o\
+      readsdr.o\
+      readsepticbz.o\
+      readseptwq.o\
+      readsno.o\
+      readsol.o\
+      readsub.o\
+      readswq.o\
+      readtill.o\
+      readurban.o\
+      readwgn.o\
+      readwus.o\
+      readwwq.o\
+      readyr.o\
+      reccnst.o\
+      recday.o\
+      rechour.o\
+      recmon.o\
+      recyear.o\
+      regres.o\
+      res.o\
+      resbact.o\
+      resetlu.o\
+      reshr.o\
+      resinit.o\
+      resnut.o\
+      rewind_init.o\
+      rhgen.o\
+      rootfr.o\
+      route.o\
+      routels.o\
+      routeunit.o\
+      routres.o\
+      rsedaa.o\
+      rseday.o\
+      rsedmon.o\
+      rsedyr.o\
+      rtbact.o\
+      rtday.o\
+      rteinit.o\
+      rthmusk.o\
+      rthpest.o\
+      rthsed.o\
+      rthvsc.o\
+      rtmusk.o\
+      rtout.o\
+      rtpest.o\
+      rtsed.o\
+      rtsed_bagnold.o\
+      rtsed_kodatie.o\
+      rtsed_Molinas_Wu.o\
+      rtsed_yangsand.o\
+      sat_excess.o\
+      save.o\
+      saveconc.o\
+      schedule_ops.o\
+      sched_mgt.o\
+      simulate.o\
+      sim_initday.o\
+      sim_inityr.o\
+      slrgen.o\
+      smeas.o\
+      snom.o\
+      soil_chem.o\
+      soil_par.o\
+      soil_phys.o\
+      soil_write.o\
+      solp.o\
+      solt.o\
+      std1.o\
+      std2.o\
+      std3.o\
+      stdaa.o\
+      storeinitial.o\
+      structure.o\
+      subaa.o\
+      subbasin.o\
+      subday.o\
+      submon.o\
+      substor.o\
+      subwq.o\
+      subyr.o\
+      sub_subbasin.o\
+      sumhyd.o\
+      sumv.o\
+      surface.o\
+      surfstor.o\
+      surfst_h2o.o\
+      surq_daycn.o\
+      surq_greenampt.o\
+      swbl.o\
+      sweep.o\
+      swu.o\
+      tair.o\
+      tgen.o\
+      theta.o\
+      tillfactor.o\
+      tillmix.o\
+      tmeas.o\
+      tran.o\
+      transfer.o\
+      tstr.o\
+      ttcoef.o\
+      ttcoef_wway.o\
+      urban.o\
+      urbanhr.o\
+      urb_bmp.o\
+      varinit.o\
+      vbl.o\
+      virtual.o\
+      volq.o\
+      washp.o\
+      watbal.o\
+      water_hru.o\
+      watqual.o\
+      watqual2.o\
+      wattable.o\
+      watuse.o\
+      weatgn.o\
+      wetlan.o\
+      wmeas.o\
+      wndgen.o\
+      writea.o\
+      writeaa.o\
+      writed.o\
+      writem.o\
+      xmon.o\
+      ysed.o\
+      zero0.o\
+      zero1.o\
+      zero2.o\
+      zeroini.o\
+      zero_urbn.o\
+
+swat: $(OBJ)
+	f90  -fnonstd -cg89  -g -Bdynamic $(OBJ) -lm  -o  swat
+
+main.o:  main.f modparm.f
+	f90 -fnonstd -cg89  -c  -g  main.f
+addh.o:  addh.f
+	f90 -fnonstd -cg89  -c  -g  addh.f
+albedo.o:  albedo.f
+	f90 -fnonstd -cg89  -c  -g  albedo.f
+allocate_parms.o:  allocate_parms.f
+	f90 -fnonstd -cg89  -c  -g  allocate_parms.f
+alph.o:  alph.f
+	f90 -fnonstd -cg89  -c  -g  alph.f
+anfert.o:  anfert.f
+	f90 -fnonstd -cg89  -c  -g  anfert.f
+apex_day.o:  apex_day.f
+	f90 -fnonstd -cg89  -c  -g  apex_day.f
+apply.o:  apply.f
+	f90 -fnonstd -cg89  -c  -g  apply.f
+ascrv.o:  ascrv.f
+	f90 -fnonstd -cg89  -c  -g  ascrv.f
+atri.o:  atri.f
+	f90 -fnonstd -cg89  -c  -g  atri.f
+aunif.o:  aunif.f
+	f90 -fnonstd -cg89  -c  -g  aunif.f
+autoirr.o:  autoirr.f
+	f90 -fnonstd -cg89  -c  -g  autoirr.f
+aveval.o:  aveval.f
+	f90 -fnonstd -cg89  -c  -g  aveval.f
+bacteria.o:  bacteria.f
+	f90 -fnonstd -cg89  -c  -g  bacteria.f
+biofilm.o:  biofilm.f
+	f90 -fnonstd -cg89  -c  -g  biofilm.f
+biozone.o:  biozone.f
+	f90 -fnonstd -cg89  -c  -g  biozone.f
+bmpfixed.o:  bmpfixed.f
+	f90 -fnonstd -cg89  -c  -g  bmpfixed.f
+bmpinit.o:  bmpinit.f
+	f90 -fnonstd -cg89  -c  -g  bmpinit.f
+bmp_det_pond.o:  bmp_det_pond.f
+	f90 -fnonstd -cg89  -c  -g  bmp_det_pond.f
+bmp_ri_pond.o:  bmp_ri_pond.f
+	f90 -fnonstd -cg89  -c  -g  bmp_ri_pond.f
+bmp_sand_filter.o:  bmp_sand_filter.f
+	f90 -fnonstd -cg89  -c  -g  bmp_sand_filter.f
+bmp_sed_pond.o:  bmp_sed_pond.f
+	f90 -fnonstd -cg89  -c  -g  bmp_sed_pond.f
+bmp_wet_pond.o:  bmp_wet_pond.f
+	f90 -fnonstd -cg89  -c  -g  bmp_wet_pond.f
+buffer.o:  buffer.f
+	f90 -fnonstd -cg89  -c  -g  buffer.f
+burnop.o:  burnop.f
+	f90 -fnonstd -cg89  -c  -g  burnop.f
+canopyint.o:  canopyint.f
+	f90 -fnonstd -cg89  -c  -g  canopyint.f
+caps.o:  caps.f
+	f90 -fnonstd -cg89  -c  -g  caps.f
+carbon_new.o:  carbon_new.f
+	f90 -fnonstd -cg89  -c  -g  carbon_new.f
+carbon_zhang2.o:  carbon_zhang2.f90
+	f90 -fnonstd -cg89  -c  -g  carbon_zhang2.f90
+cfactor.o:  cfactor.f
+	f90 -fnonstd -cg89  -c  -g  cfactor.f
+chkcst.o:  chkcst.f
+	f90 -fnonstd -cg89  -c  -g  chkcst.f
+clgen.o:  clgen.f
+	f90 -fnonstd -cg89  -c  -g  clgen.f
+clicon.o:  clicon.f
+	f90 -fnonstd -cg89  -c  -g  clicon.f
+command.o:  command.f
+	f90 -fnonstd -cg89  -c  -g  command.f
+conapply.o:  conapply.f
+	f90 -fnonstd -cg89  -c  -g  conapply.f
+confert.o:  confert.f
+	f90 -fnonstd -cg89  -c  -g  confert.f
+crackflow.o:  crackflow.f
+	f90 -fnonstd -cg89  -c  -g  crackflow.f
+crackvol.o:  crackvol.f
+	f90 -fnonstd -cg89  -c  -g  crackvol.f
+curno.o:  curno.f
+	f90 -fnonstd -cg89  -c  -g  curno.f
+dailycn.o:  dailycn.f
+	f90 -fnonstd -cg89  -c  -g  dailycn.f
+decay.o:  decay.f
+	f90 -fnonstd -cg89  -c  -g  decay.f
+depstor.o:  depstor.f
+	f90 -fnonstd -cg89  -c  -g  depstor.f
+distrib_bmps.o:  distrib_bmps.f
+	f90 -fnonstd -cg89  -c  -g  distrib_bmps.f
+dormant.o:  dormant.f
+	f90 -fnonstd -cg89  -c  -g  dormant.f
+drains.o:  drains.f
+	f90 -fnonstd -cg89  -c  -g  drains.f
+dstn1.o:  dstn1.f
+	f90 -fnonstd -cg89  -c  -g  dstn1.f
+ee.o:  ee.f
+	f90 -fnonstd -cg89  -c  -g  ee.f
+eiusle.o:  eiusle.f
+	f90 -fnonstd -cg89  -c  -g  eiusle.f
+enrsb.o:  enrsb.f
+	f90 -fnonstd -cg89  -c  -g  enrsb.f
+erfc.o:  erfc.f
+	f90 -fnonstd -cg89  -c  -g  erfc.f
+estimate_ksat.o:  estimate_ksat.f
+	f90 -fnonstd -cg89  -c  -g  estimate_ksat.f
+etact.o:  etact.f
+	f90 -fnonstd -cg89  -c  -g  etact.f
+etpot.o:  etpot.f
+	f90 -fnonstd -cg89  -c  -g  etpot.f
+expo.o:  expo.f
+	f90 -fnonstd -cg89  -c  -g  expo.f
+fert.o:  fert.f
+	f90 -fnonstd -cg89  -c  -g  fert.f
+filter.o:  filter.f
+	f90 -fnonstd -cg89  -c  -g  filter.f
+filtw.o:  filtw.f
+	f90 -fnonstd -cg89  -c  -g  filtw.f
+finalbal.o:  finalbal.f
+	f90 -fnonstd -cg89  -c  -g  finalbal.f
+gcycl.o:  gcycl.f
+	f90 -fnonstd -cg89  -c  -g  gcycl.f
+getallo.o:  getallo.f
+	f90 -fnonstd -cg89  -c  -g  getallo.f
+grass_wway.o:  grass_wway.f
+	f90 -fnonstd -cg89  -c  -g  grass_wway.f
+graze.o:  graze.f
+	f90 -fnonstd -cg89  -c  -g  graze.f
+grow.o:  grow.f
+	f90 -fnonstd -cg89  -c  -g  grow.f
+gwmod.o:  gwmod.f
+	f90 -fnonstd -cg89  -c  -g  gwmod.f
+gwmod_deep.o:  gwmod_deep.f
+	f90 -fnonstd -cg89  -c  -g  gwmod_deep.f
+gwnutr.o:  gwnutr.f
+	f90 -fnonstd -cg89  -c  -g  gwnutr.f
+gw_no3.o:  gw_no3.f
+	f90 -fnonstd -cg89  -c  -g  gw_no3.f
+h2omgt_init.o:  h2omgt_init.f
+	f90 -fnonstd -cg89  -c  -g  h2omgt_init.f
+harvestop.o:  harvestop.f
+	f90 -fnonstd -cg89  -c  -g  harvestop.f
+harvgrainop.o:  harvgrainop.f
+	f90 -fnonstd -cg89  -c  -g  harvgrainop.f
+harvkillop.o:  harvkillop.f
+	f90 -fnonstd -cg89  -c  -g  harvkillop.f
+header.o:  header.f
+	f90 -fnonstd -cg89  -c  -g  header.f
+headout.o:  headout.f
+	f90 -fnonstd -cg89  -c  -g  headout.f
+hhnoqual.o:  hhnoqual.f
+	f90 -fnonstd -cg89  -c  -g  hhnoqual.f
+hhwatqual.o:  hhwatqual.f
+	f90 -fnonstd -cg89  -c  -g  hhwatqual.f
+hmeas.o:  hmeas.f
+	f90 -fnonstd -cg89  -c  -g  hmeas.f
+HQDAV.o:  HQDAV.f90
+	f90 -fnonstd -cg89  -c  -g  HQDAV.f90
+hruaa.o:  hruaa.f
+	f90 -fnonstd -cg89  -c  -g  hruaa.f
+hruallo.o:  hruallo.f
+	f90 -fnonstd -cg89  -c  -g  hruallo.f
+hruday.o:  hruday.f90
+	f90 -fnonstd -cg89  -c  -g  hruday.f90
+hrumon.o:  hrumon.f
+	f90 -fnonstd -cg89  -c  -g  hrumon.f
+hrupond.o:  hrupond.f
+	f90 -fnonstd -cg89  -c  -g  hrupond.f
+hrupondhr.o:  hrupondhr.f
+	f90 -fnonstd -cg89  -c  -g  hrupondhr.f
+hruyr.o:  hruyr.f
+	f90 -fnonstd -cg89  -c  -g  hruyr.f
+hydroinit.o:  hydroinit.f
+	f90 -fnonstd -cg89  -c  -g  hydroinit.f
+icl.o:  icl.f
+	f90 -fnonstd -cg89  -c  -g  icl.f
+impndaa.o:  impndaa.f
+	f90 -fnonstd -cg89  -c  -g  impndaa.f
+impndday.o:  impndday.f
+	f90 -fnonstd -cg89  -c  -g  impndday.f
+impndmon.o:  impndmon.f
+	f90 -fnonstd -cg89  -c  -g  impndmon.f
+impndyr.o:  impndyr.f
+	f90 -fnonstd -cg89  -c  -g  impndyr.f
+impnd_init.o:  impnd_init.f
+	f90 -fnonstd -cg89  -c  -g  impnd_init.f
+irrigate.o:  irrigate.f
+	f90 -fnonstd -cg89  -c  -g  irrigate.f
+irrsub.o:  irrsub.f
+	f90 -fnonstd -cg89  -c  -g  irrsub.f
+irr_rch.o:  irr_rch.f
+	f90 -fnonstd -cg89  -c  -g  irr_rch.f
+irr_res.o:  irr_res.f
+	f90 -fnonstd -cg89  -c  -g  irr_res.f
+jdt.o:  jdt.f
+	f90 -fnonstd -cg89  -c  -g  jdt.f
+killop.o:  killop.f
+	f90 -fnonstd -cg89  -c  -g  killop.f
+lakeq.o:  lakeq.f
+	f90 -fnonstd -cg89  -c  -g  lakeq.f
+latsed.o:  latsed.f
+	f90 -fnonstd -cg89  -c  -g  latsed.f
+layersplit.o:  layersplit.f
+	f90 -fnonstd -cg89  -c  -g  layersplit.f
+lidinit.o:  lidinit.f
+	f90 -fnonstd -cg89  -c  -g  lidinit.f
+lids.o:  lids.f
+	f90 -fnonstd -cg89  -c  -g  lids.f
+lid_cistern.o:  lid_cistern.f
+	f90 -fnonstd -cg89  -c  -g  lid_cistern.f
+lid_greenroof.o:  lid_greenroof.f
+	f90 -fnonstd -cg89  -c  -g  lid_greenroof.f
+lid_porpavement.o:  lid_porpavement.f
+	f90 -fnonstd -cg89  -c  -g  lid_porpavement.f
+lid_raingarden.o:  lid_raingarden.f
+	f90 -fnonstd -cg89  -c  -g  lid_raingarden.f
+log_normal.o:  log_normal.f
+	f90 -fnonstd -cg89  -c  -g  log_normal.f
+lwqdef.o:  lwqdef.f
+	f90 -fnonstd -cg89  -c  -g  lwqdef.f
+NCsed_leach.o:  NCsed_leach.f90
+	f90 -fnonstd -cg89  -c  -g  NCsed_leach.f90
+ndenit.o:  ndenit.f
+	f90 -fnonstd -cg89  -c  -g  ndenit.f
+newtillmix.o:  newtillmix.f
+	f90 -fnonstd -cg89  -c  -g  newtillmix.f
+nfix.o:  nfix.f
+	f90 -fnonstd -cg89  -c  -g  nfix.f
+nitvol.o:  nitvol.f
+	f90 -fnonstd -cg89  -c  -g  nitvol.f
+nlch.o:  nlch.f
+	f90 -fnonstd -cg89  -c  -g  nlch.f
+nminrl.o:  nminrl.f
+	f90 -fnonstd -cg89  -c  -g  nminrl.f
+noqual.o:  noqual.f
+	f90 -fnonstd -cg89  -c  -g  noqual.f
+npup.o:  npup.f
+	f90 -fnonstd -cg89  -c  -g  npup.f
+nrain.o:  nrain.f
+	f90 -fnonstd -cg89  -c  -g  nrain.f
+nup.o:  nup.f
+	f90 -fnonstd -cg89  -c  -g  nup.f
+nuts.o:  nuts.f
+	f90 -fnonstd -cg89  -c  -g  nuts.f
+openwth.o:  openwth.f
+	f90 -fnonstd -cg89  -c  -g  openwth.f
+operatn.o:  operatn.f
+	f90 -fnonstd -cg89  -c  -g  operatn.f
+orgn.o:  orgn.f
+	f90 -fnonstd -cg89  -c  -g  orgn.f
+orgncswat.o:  orgncswat.f
+	f90 -fnonstd -cg89  -c  -g  orgncswat.f
+origtile.o:  origtile.f
+	f90 -fnonstd -cg89  -c  -g  origtile.f
+ovr_sed.o:  ovr_sed.f
+	f90 -fnonstd -cg89  -c  -g  ovr_sed.f
+percmacro.o:  percmacro.f
+	f90 -fnonstd -cg89  -c  -g  percmacro.f
+percmain.o:  percmain.f
+	f90 -fnonstd -cg89  -c  -g  percmain.f
+percmicro.o:  percmicro.f
+	f90 -fnonstd -cg89  -c  -g  percmicro.f
+pestlch.o:  pestlch.f
+	f90 -fnonstd -cg89  -c  -g  pestlch.f
+pestw.o:  pestw.f
+	f90 -fnonstd -cg89  -c  -g  pestw.f
+pesty.o:  pesty.f
+	f90 -fnonstd -cg89  -c  -g  pesty.f
+pgen.o:  pgen.f
+	f90 -fnonstd -cg89  -c  -g  pgen.f
+pgenhr.o:  pgenhr.f
+	f90 -fnonstd -cg89  -c  -g  pgenhr.f
+pkq.o:  pkq.f
+	f90 -fnonstd -cg89  -c  -g  pkq.f
+plantmod.o:  plantmod.f
+	f90 -fnonstd -cg89  -c  -g  plantmod.f
+plantop.o:  plantop.f
+	f90 -fnonstd -cg89  -c  -g  plantop.f
+pmeas.o:  pmeas.f
+	f90 -fnonstd -cg89  -c  -g  pmeas.f
+pminrl.o:  pminrl.f
+	f90 -fnonstd -cg89  -c  -g  pminrl.f
+pminrl2.o:  pminrl2.f
+	f90 -fnonstd -cg89  -c  -g  pminrl2.f
+pond.o:  pond.f
+	f90 -fnonstd -cg89  -c  -g  pond.f
+pondhr.o:  pondhr.f
+	f90 -fnonstd -cg89  -c  -g  pondhr.f
+pothole.o:  pothole.f
+	f90 -fnonstd -cg89  -c  -g  pothole.f
+potholehr.o:  potholehr.f
+	f90 -fnonstd -cg89  -c  -g  potholehr.f
+print_hyd.o:  print_hyd.f
+	f90 -fnonstd -cg89  -c  -g  print_hyd.f
+psed.o:  psed.f
+	f90 -fnonstd -cg89  -c  -g  psed.f
+qman.o:  qman.f
+	f90 -fnonstd -cg89  -c  -g  qman.f
+ran1.o:  ran1.f
+	f90 -fnonstd -cg89  -c  -g  ran1.f
+rchaa.o:  rchaa.f
+	f90 -fnonstd -cg89  -c  -g  rchaa.f
+rchday.o:  rchday.f
+	f90 -fnonstd -cg89  -c  -g  rchday.f
+rchinit.o:  rchinit.f
+	f90 -fnonstd -cg89  -c  -g  rchinit.f
+rchmon.o:  rchmon.f
+	f90 -fnonstd -cg89  -c  -g  rchmon.f
+rchuse.o:  rchuse.f
+	f90 -fnonstd -cg89  -c  -g  rchuse.f
+rchyr.o:  rchyr.f
+	f90 -fnonstd -cg89  -c  -g  rchyr.f
+reachout.o:  reachout.f
+	f90 -fnonstd -cg89  -c  -g  reachout.f
+readatmodep.o:  readatmodep.f
+	f90 -fnonstd -cg89  -c  -g  readatmodep.f
+readbsn.o:  readbsn.f
+	f90 -fnonstd -cg89  -c  -g  readbsn.f
+readchm.o:  readchm.f
+	f90 -fnonstd -cg89  -c  -g  readchm.f
+readcnst.o:  readcnst.f
+	f90 -fnonstd -cg89  -c  -g  readcnst.f
+readfcst.o:  readfcst.f
+	f90 -fnonstd -cg89  -c  -g  readfcst.f
+readfert.o:  readfert.f
+	f90 -fnonstd -cg89  -c  -g  readfert.f
+readfig.o:  readfig.f
+	f90 -fnonstd -cg89  -c  -g  readfig.f
+readfile.o:  readfile.f
+	f90 -fnonstd -cg89  -c  -g  readfile.f
+readgw.o:  readgw.f
+	f90 -fnonstd -cg89  -c  -g  readgw.f
+readhru.o:  readhru.f
+	f90 -fnonstd -cg89  -c  -g  readhru.f
+readinpt.o:  readinpt.f
+	f90 -fnonstd -cg89  -c  -g  readinpt.f
+readlup.o:  readlup.f
+	f90 -fnonstd -cg89  -c  -g  readlup.f
+readlwq.o:  readlwq.f
+	f90 -fnonstd -cg89  -c  -g  readlwq.f
+readmgt.o:  readmgt.f
+	f90 -fnonstd -cg89  -c  -g  readmgt.f
+readmon.o:  readmon.f
+	f90 -fnonstd -cg89  -c  -g  readmon.f
+readops.o:  readops.f
+	f90 -fnonstd -cg89  -c  -g  readops.f
+readpest.o:  readpest.f
+	f90 -fnonstd -cg89  -c  -g  readpest.f
+readplant.o:  readplant.f
+	f90 -fnonstd -cg89  -c  -g  readplant.f
+readpnd.o:  readpnd.f
+	f90 -fnonstd -cg89  -c  -g  readpnd.f
+readres.o:  readres.f
+	f90 -fnonstd -cg89  -c  -g  readres.f
+readrte.o:  readrte.f
+	f90 -fnonstd -cg89  -c  -g  readrte.f
+readru.o:  readru.f
+	f90 -fnonstd -cg89  -c  -g  readru.f
+readsdr.o:  readsdr.f
+	f90 -fnonstd -cg89  -c  -g  readsdr.f
+readsepticbz.o:  readsepticbz.f
+	f90 -fnonstd -cg89  -c  -g  readsepticbz.f
+readseptwq.o:  readseptwq.f
+	f90 -fnonstd -cg89  -c  -g  readseptwq.f
+readsno.o:  readsno.f
+	f90 -fnonstd -cg89  -c  -g  readsno.f
+readsol.o:  readsol.f
+	f90 -fnonstd -cg89  -c  -g  readsol.f
+readsub.o:  readsub.f
+	f90 -fnonstd -cg89  -c  -g  readsub.f
+readswq.o:  readswq.f
+	f90 -fnonstd -cg89  -c  -g  readswq.f
+readtill.o:  readtill.f
+	f90 -fnonstd -cg89  -c  -g  readtill.f
+readurban.o:  readurban.f
+	f90 -fnonstd -cg89  -c  -g  readurban.f
+readwgn.o:  readwgn.f
+	f90 -fnonstd -cg89  -c  -g  readwgn.f
+readwus.o:  readwus.f
+	f90 -fnonstd -cg89  -c  -g  readwus.f
+readwwq.o:  readwwq.f
+	f90 -fnonstd -cg89  -c  -g  readwwq.f
+readyr.o:  readyr.f
+	f90 -fnonstd -cg89  -c  -g  readyr.f
+reccnst.o:  reccnst.f
+	f90 -fnonstd -cg89  -c  -g  reccnst.f
+recday.o:  recday.f
+	f90 -fnonstd -cg89  -c  -g  recday.f
+rechour.o:  rechour.f
+	f90 -fnonstd -cg89  -c  -g  rechour.f
+recmon.o:  recmon.f
+	f90 -fnonstd -cg89  -c  -g  recmon.f
+recyear.o:  recyear.f
+	f90 -fnonstd -cg89  -c  -g  recyear.f
+regres.o:  regres.f
+	f90 -fnonstd -cg89  -c  -g  regres.f
+res.o:  res.f
+	f90 -fnonstd -cg89  -c  -g  res.f
+resbact.o:  resbact.f
+	f90 -fnonstd -cg89  -c  -g  resbact.f
+resetlu.o:  resetlu.f
+	f90 -fnonstd -cg89  -c  -g  resetlu.f
+reshr.o:  reshr.f
+	f90 -fnonstd -cg89  -c  -g  reshr.f
+resinit.o:  resinit.f
+	f90 -fnonstd -cg89  -c  -g  resinit.f
+resnut.o:  resnut.f
+	f90 -fnonstd -cg89  -c  -g  resnut.f
+rewind_init.o:  rewind_init.f
+	f90 -fnonstd -cg89  -c  -g  rewind_init.f
+rhgen.o:  rhgen.f
+	f90 -fnonstd -cg89  -c  -g  rhgen.f
+rootfr.o:  rootfr.f
+	f90 -fnonstd -cg89  -c  -g  rootfr.f
+route.o:  route.f
+	f90 -fnonstd -cg89  -c  -g  route.f
+routels.o:  routels.f
+	f90 -fnonstd -cg89  -c  -g  routels.f
+routeunit.o:  routeunit.f
+	f90 -fnonstd -cg89  -c  -g  routeunit.f
+routres.o:  routres.f
+	f90 -fnonstd -cg89  -c  -g  routres.f
+rsedaa.o:  rsedaa.f
+	f90 -fnonstd -cg89  -c  -g  rsedaa.f
+rseday.o:  rseday.f
+	f90 -fnonstd -cg89  -c  -g  rseday.f
+rsedmon.o:  rsedmon.f
+	f90 -fnonstd -cg89  -c  -g  rsedmon.f
+rsedyr.o:  rsedyr.f
+	f90 -fnonstd -cg89  -c  -g  rsedyr.f
+rtbact.o:  rtbact.f
+	f90 -fnonstd -cg89  -c  -g  rtbact.f
+rtday.o:  rtday.f
+	f90 -fnonstd -cg89  -c  -g  rtday.f
+rteinit.o:  rteinit.f
+	f90 -fnonstd -cg89  -c  -g  rteinit.f
+rthmusk.o:  rthmusk.f
+	f90 -fnonstd -cg89  -c  -g  rthmusk.f
+rthpest.o:  rthpest.f
+	f90 -fnonstd -cg89  -c  -g  rthpest.f
+rthsed.o:  rthsed.f
+	f90 -fnonstd -cg89  -c  -g  rthsed.f
+rthvsc.o:  rthvsc.f90
+	f90 -fnonstd -cg89  -c  -g  rthvsc.f90
+rtmusk.o:  rtmusk.f
+	f90 -fnonstd -cg89  -c  -g  rtmusk.f
+rtout.o:  rtout.f
+	f90 -fnonstd -cg89  -c  -g  rtout.f
+rtpest.o:  rtpest.f
+	f90 -fnonstd -cg89  -c  -g  rtpest.f
+rtsed.o:  rtsed.f
+	f90 -fnonstd -cg89  -c  -g  rtsed.f
+rtsed_bagnold.o:  rtsed_bagnold.f
+	f90 -fnonstd -cg89  -c  -g  rtsed_bagnold.f
+rtsed_kodatie.o:  rtsed_kodatie.f
+	f90 -fnonstd -cg89  -c  -g  rtsed_kodatie.f
+rtsed_Molinas_Wu.o:  rtsed_Molinas_Wu.f
+	f90 -fnonstd -cg89  -c  -g  rtsed_Molinas_Wu.f
+rtsed_yangsand.o:  rtsed_yangsand.f
+	f90 -fnonstd -cg89  -c  -g  rtsed_yangsand.f
+sat_excess.o:  sat_excess.f
+	f90 -fnonstd -cg89  -c  -g  sat_excess.f
+save.o:  save.f
+	f90 -fnonstd -cg89  -c  -g  save.f
+saveconc.o:  saveconc.f
+	f90 -fnonstd -cg89  -c  -g  saveconc.f
+schedule_ops.o:  schedule_ops.f
+	f90 -fnonstd -cg89  -c  -g  schedule_ops.f
+sched_mgt.o:  sched_mgt.f
+	f90 -fnonstd -cg89  -c  -g  sched_mgt.f
+simulate.o:  simulate.f
+	f90 -fnonstd -cg89  -c  -g  simulate.f
+sim_initday.o:  sim_initday.f
+	f90 -fnonstd -cg89  -c  -g  sim_initday.f
+sim_inityr.o:  sim_inityr.f
+	f90 -fnonstd -cg89  -c  -g  sim_inityr.f
+slrgen.o:  slrgen.f
+	f90 -fnonstd -cg89  -c  -g  slrgen.f
+smeas.o:  smeas.f
+	f90 -fnonstd -cg89  -c  -g  smeas.f
+snom.o:  snom.f
+	f90 -fnonstd -cg89  -c  -g  snom.f
+soil_chem.o:  soil_chem.f
+	f90 -fnonstd -cg89  -c  -g  soil_chem.f
+soil_par.o:  soil_par.f
+	f90 -fnonstd -cg89  -c  -g  soil_par.f
+soil_phys.o:  soil_phys.f
+	f90 -fnonstd -cg89  -c  -g  soil_phys.f
+soil_write.o:  soil_write.f
+	f90 -fnonstd -cg89  -c  -g  soil_write.f
+solp.o:  solp.f
+	f90 -fnonstd -cg89  -c  -g  solp.f
+solt.o:  solt.f
+	f90 -fnonstd -cg89  -c  -g  solt.f
+std1.o:  std1.f
+	f90 -fnonstd -cg89  -c  -g  std1.f
+std2.o:  std2.f
+	f90 -fnonstd -cg89  -c  -g  std2.f
+std3.o:  std3.f
+	f90 -fnonstd -cg89  -c  -g  std3.f
+stdaa.o:  stdaa.f
+	f90 -fnonstd -cg89  -c  -g  stdaa.f
+storeinitial.o:  storeinitial.f
+	f90 -fnonstd -cg89  -c  -g  storeinitial.f
+structure.o:  structure.f
+	f90 -fnonstd -cg89  -c  -g  structure.f
+subaa.o:  subaa.f
+	f90 -fnonstd -cg89  -c  -g  subaa.f
+subbasin.o:  subbasin.f
+	f90 -fnonstd -cg89  -c  -g  subbasin.f
+subday.o:  subday.f
+	f90 -fnonstd -cg89  -c  -g  subday.f
+submon.o:  submon.f
+	f90 -fnonstd -cg89  -c  -g  submon.f
+substor.o:  substor.f
+	f90 -fnonstd -cg89  -c  -g  substor.f
+subwq.o:  subwq.f
+	f90 -fnonstd -cg89  -c  -g  subwq.f
+subyr.o:  subyr.f
+	f90 -fnonstd -cg89  -c  -g  subyr.f
+sub_subbasin.o:  sub_subbasin.f
+	f90 -fnonstd -cg89  -c  -g  sub_subbasin.f
+sumhyd.o:  sumhyd.f
+	f90 -fnonstd -cg89  -c  -g  sumhyd.f
+sumv.o:  sumv.f
+	f90 -fnonstd -cg89  -c  -g  sumv.f
+surface.o:  surface.f
+	f90 -fnonstd -cg89  -c  -g  surface.f
+surfstor.o:  surfstor.f
+	f90 -fnonstd -cg89  -c  -g  surfstor.f
+surfst_h2o.o:  surfst_h2o.f
+	f90 -fnonstd -cg89  -c  -g  surfst_h2o.f
+surq_daycn.o:  surq_daycn.f
+	f90 -fnonstd -cg89  -c  -g  surq_daycn.f
+surq_greenampt.o:  surq_greenampt.f
+	f90 -fnonstd -cg89  -c  -g  surq_greenampt.f
+swbl.o:  swbl.f
+	f90 -fnonstd -cg89  -c  -g  swbl.f
+sweep.o:  sweep.f
+	f90 -fnonstd -cg89  -c  -g  sweep.f
+swu.o:  swu.f
+	f90 -fnonstd -cg89  -c  -g  swu.f
+tair.o:  tair.f
+	f90 -fnonstd -cg89  -c  -g  tair.f
+tgen.o:  tgen.f
+	f90 -fnonstd -cg89  -c  -g  tgen.f
+theta.o:  theta.f
+	f90 -fnonstd -cg89  -c  -g  theta.f
+tillfactor.o:  tillfactor.f
+	f90 -fnonstd -cg89  -c  -g  tillfactor.f
+tillmix.o:  tillmix.f
+	f90 -fnonstd -cg89  -c  -g  tillmix.f
+tmeas.o:  tmeas.f
+	f90 -fnonstd -cg89  -c  -g  tmeas.f
+tran.o:  tran.f
+	f90 -fnonstd -cg89  -c  -g  tran.f
+transfer.o:  transfer.f
+	f90 -fnonstd -cg89  -c  -g  transfer.f
+tstr.o:  tstr.f
+	f90 -fnonstd -cg89  -c  -g  tstr.f
+ttcoef.o:  ttcoef.f
+	f90 -fnonstd -cg89  -c  -g  ttcoef.f
+ttcoef_wway.o:  ttcoef_wway.f
+	f90 -fnonstd -cg89  -c  -g  ttcoef_wway.f
+urban.o:  urban.f
+	f90 -fnonstd -cg89  -c  -g  urban.f
+urbanhr.o:  urbanhr.f
+	f90 -fnonstd -cg89  -c  -g  urbanhr.f
+urb_bmp.o:  urb_bmp.f
+	f90 -fnonstd -cg89  -c  -g  urb_bmp.f
+varinit.o:  varinit.f
+	f90 -fnonstd -cg89  -c  -g  varinit.f
+vbl.o:  vbl.f
+	f90 -fnonstd -cg89  -c  -g  vbl.f
+virtual.o:  virtual.f
+	f90 -fnonstd -cg89  -c  -g  virtual.f
+volq.o:  volq.f
+	f90 -fnonstd -cg89  -c  -g  volq.f
+washp.o:  washp.f
+	f90 -fnonstd -cg89  -c  -g  washp.f
+watbal.o:  watbal.f
+	f90 -fnonstd -cg89  -c  -g  watbal.f
+water_hru.o:  water_hru.f
+	f90 -fnonstd -cg89  -c  -g  water_hru.f
+watqual.o:  watqual.f
+	f90 -fnonstd -cg89  -c  -g  watqual.f
+watqual2.o:  watqual2.f
+	f90 -fnonstd -cg89  -c  -g  watqual2.f
+wattable.o:  wattable.f
+	f90 -fnonstd -cg89  -c  -g  wattable.f
+watuse.o:  watuse.f
+	f90 -fnonstd -cg89  -c  -g  watuse.f
+weatgn.o:  weatgn.f
+	f90 -fnonstd -cg89  -c  -g  weatgn.f
+wetlan.o:  wetlan.f
+	f90 -fnonstd -cg89  -c  -g  wetlan.f
+wmeas.o:  wmeas.f
+	f90 -fnonstd -cg89  -c  -g  wmeas.f
+wndgen.o:  wndgen.f
+	f90 -fnonstd -cg89  -c  -g  wndgen.f
+writea.o:  writea.f
+	f90 -fnonstd -cg89  -c  -g  writea.f
+writeaa.o:  writeaa.f
+	f90 -fnonstd -cg89  -c  -g  writeaa.f
+writed.o:  writed.f
+	f90 -fnonstd -cg89  -c  -g  writed.f
+writem.o:  writem.f
+	f90 -fnonstd -cg89  -c  -g  writem.f
+xmon.o:  xmon.f
+	f90 -fnonstd -cg89  -c  -g  xmon.f
+ysed.o:  ysed.f
+	f90 -fnonstd -cg89  -c  -g  ysed.f
+zero0.o:  zero0.f
+	f90 -fnonstd -cg89  -c  -g  zero0.f
+zero1.o:  zero1.f
+	f90 -fnonstd -cg89  -c  -g  zero1.f
+zero2.o:  zero2.f
+	f90 -fnonstd -cg89  -c  -g  zero2.f
+zeroini.o:  zeroini.f
+	f90 -fnonstd -cg89  -c  -g  zeroini.f
+zero_urbn.o:  zero_urbn.f
+	f90 -fnonstd -cg89  -c  -g  zero_urbn.f
